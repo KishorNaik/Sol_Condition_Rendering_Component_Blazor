@@ -1,0 +1,17 @@
+﻿<div class="container">
+    <div>
+        <h1>
+            This is a Demo showing to implement Conditional Rendering in Blazor.
+        </h1>
+    </div>
+    <div>
+        <Choose>
+            <When Condition="@(this.IsLoggedIn==true ? true : false)">
+                <button class="btn btn-primary">Logout</button>
+            </When>
+            <When Condition="@(this.IsLoggedIn==false ? true : false)">
+                <button class="btn btn-primary">Login</button>
+            </When>
+        </Choose>
+    </div>
+</div>
